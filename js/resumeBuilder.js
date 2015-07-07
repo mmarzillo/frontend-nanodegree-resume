@@ -1,6 +1,5 @@
 $("#main").append(["Matt Marzillo"]);
-var awesomeThoughts = "AwesomeThoughts";
+var awesomeThoughts = "My name is Matt and I am Awesome";
 var funThoughts = awesomeThoughts.replace("Awesome","Fun");
 $('#main').append(funThoughts);
-console.log(awesomeThoughts);
-console.log(funThoughts);
+
