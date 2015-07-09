@@ -6,6 +6,10 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 var bio = {
   "name": "Matt Marzillo",
-  "Role": "Advanced Analytics Consultant"
+  "Role": "Advanced Analytics Consultant",
+  "Contacts": {
+    "Phone": "708-837-1631",
+    "email": "mmarzillo@gmail.com"
+  }
 };
 $("#main").append(bio.Role);
