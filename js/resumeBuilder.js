@@ -10,6 +10,7 @@ var bio = {
   "Contacts": {
     "Phone": "708-837-1631",
     "email": "mmarzillo@gmail.com"
-  }
+  },
+  "welcome": "Hello"
 };
-$("#main").append(bio.Role);
+$("#main").append(bio.welcome);
