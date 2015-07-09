@@ -9,6 +9,9 @@ var bio = {
   "Role": "Advanced Analytics Consultant",
   "Phone": "708-837-1631",
   "email": "mmarzillo@gmail.com",
-  "welcome": "Hello"
+  "welcome": "Hello",
+  "skills": ["Full Stack BI Developer ETL Report Development Architecture","Advanced Analytics R Python and SAS","Strong Healthcare Experience"
+],
+"Picture": "NA"
 };
-$("#main").append(bio.name);
+$("#main").append(bio.Picture);
