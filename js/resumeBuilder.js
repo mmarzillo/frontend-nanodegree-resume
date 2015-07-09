@@ -8,11 +8,12 @@ var bio = {
   "name": "Matt Marzillo",
   "Role": "Advanced Analytics Consultant",
   "Contacts": {
-  "Phone": "708-837-1631",
-  "email": "mmarzillo@gmail.com"},
+    "Phone": "708-837-1631",
+    "email": "mmarzillo@gmail.com"
+  },
   "Welcome Message": "Hello!",
-  "Skills": ["Full Stack BI Developer (ETL, Report Development, Architecture)","Advanced Analytics (R, Python and SAS)","Strong Healthcare Experience"
+  "Skills": ["Full Stack BI Developer ETL Report Development Architecture","Advanced Analytics R Python and SAS","Strong Healthcare Experience"
 ],
 "Picture": "NA"
 };
-$("#header").append(bio.email);
+$("#header").prepend(bio.email);
