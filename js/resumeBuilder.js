@@ -13,5 +13,5 @@ var bio = {
   "Picture" : "NA",
   "Welcome Message" : "Hello!",
   "Skills" : ["Full Stack BI Developer (ETL, Report Development, Architecture)","Advanced Analytics (R, Python and SAS)","Strong Healthcare Experience"
-}];
+]};
 $("#header").prepend(bio);
