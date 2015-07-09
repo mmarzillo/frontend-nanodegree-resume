@@ -15,4 +15,4 @@ var bio = {
   "Skills" : ["Full Stack BI Developer (ETL, Report Development, Architecture)","Advanced Analytics (R, Python and SAS)","Strong Healthcare Experience"
 ]
 }
-$("#header").prepend(bio);
+$("#header").append(bio.E-mail);
