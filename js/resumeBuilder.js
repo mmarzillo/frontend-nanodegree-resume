@@ -1,4 +1,4 @@
-var = name "Matt Marzillo";
+var name = "Matt Marzillo";
 var formattedName = HTMLheaderName.replace("%data%",name);
 var role = "Data Scientist";
 var formattedRole = HTMLheaderRole.replace("%data%",role);
