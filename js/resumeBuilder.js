@@ -14,5 +14,5 @@ var bio = {
   "Skills": ["Full Stack BI Developer (ETL, Report Development, Architecture)","Advanced Analytics (R, Python and SAS)","Strong Healthcare Experience"
 ],
 "Picture": "NA"
-}
+};
 $("#header").append(bio.email);
