@@ -16,4 +16,4 @@ var bio = {
 ],
 "Picture": "NA"
 };
-$("#header").prepend(bio.Role);
+$("#main").append(bio.Role);
