@@ -13,4 +13,4 @@ var bio = {
   },
   "welcome": "Hello"
 };
-$("#main").append(bio.welcome);
+$("#main").append(bio.name);
