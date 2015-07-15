@@ -64,7 +64,7 @@ var work = {
             "city": "Chicago,IL,US",
             "position": "Advanced Analytics Consultant",
             "years": "2014-2015",
-            "url": "http://www.slalom.com/"
+            "url": "http://www.slalom.com/",
             "description":"Perform advanced analytics consulting works on projects primarily in the healthcare space. Projects include BI report development, BI Architecture, Modern Data Architecture, R and Python development"
         },
         {
@@ -119,14 +119,13 @@ if (bio.skills.length > 0) {
   $("#skills").append(formattedSkill);
   var formattedSkill = HTMLskills.replace("%data%",bio.skills[2]);
   $("#skills").append(formattedSkill);
-}
+};
 
-//for (job in work.jobs){
-//  $"#workExperience").append(HTMLworkStart);
-  
-//  var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
-//  var formattedEmployer = HTMLworkTitle.replace("%data%",work.jobs[job].position);
-//  var formattedEmployerTitle = formattedEmployer + formattedTitle; $(".work-entry:last").append(formattedEmployerTitle);
-//  var formattedDescription= HTMLworkDates.replace("%data%",work.jobs[job].years); $(".work-entry:last").append(formattedDates);
-//  var formattedDescription= HTMLworkDescription.replace("%data%",work.jobs[job].description); $(".work-entry:last").append(formattedDescription);
-//}
+for (job in work.jobs){
+  $"#workExperience").append(HTMLworkStart);
+  var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
+  var formattedEmployer = HTMLworkTitle.replace("%data%",work.jobs[job].position);
+  var formattedEmployerTitle = formattedEmployer + formattedTitle; $(".work-entry:last").append(formattedEmployerTitle);
+  var formattedDescription= HTMLworkDates.replace("%data%",work.jobs[job].years); $(".work-entry:last").append(formattedDates);
+  var formattedDescription= HTMLworkDescription.replace("%data%",work.jobs[job].description); $(".work-entry:last").append(formattedDescription);
+};
