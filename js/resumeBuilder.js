@@ -68,7 +68,7 @@ var work = {
             "description":"Perform advanced analytics consulting works on projects primarily in the healthcare space. Projects include BI report development, BI Architecture, Modern Data Architecture, R and Python development"
         },
         {
-            "name": "Advocate Health Care",
+            "employer": "Advocate Health Care",
             "city": "Oak Brook, IL, US",
             "position": "Sr Business Intelligence Consultant",
             "years": "2013-2014",
@@ -76,7 +76,7 @@ var work = {
             "description":"Developed Predictive models in R and SAS to guide business decitions for Advocate operations and Supply Chain"
         },
         {
-            "name": "Northwestern University",
+            "employer": "Northwestern University",
             "city": "Evanston, IL, US",
             "position": "Procurement Administrator",
             "years": "2009-2013",
