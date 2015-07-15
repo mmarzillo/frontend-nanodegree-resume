@@ -53,7 +53,7 @@ var education = {
             "title": "JavaScript Syntax",
             "school": "Udacity",
             "date": 2015,
-            "url": "https://www.udacity.com/"
+            "url": "https://www.udacity.com/",
         }
     ]
 }
@@ -63,22 +63,25 @@ var work = {
             "employer": "Slalom Consulting",
             "city": "Chicago,IL,US",
             "position": "Advanced Analytics Consultant",
-            "years": 1,
+            "years": "2014-2015",
             "url": "http://www.slalom.com/"
+            "description":"Perform advanced analytics consulting works on projects primarily in the healthcare space. Projects include BI report development, BI Architecture, Modern Data Architecture, R and Python development"
         },
         {
             "name": "Advocate Health Care",
             "city": "Oak Brook, IL, US",
             "position": "Sr Business Intelligence Consultant",
-            "years": 2,
-            "url": "http://www.advocatehealth.com/"
+            "years": "2013-2014",
+            "url": "http://www.advocatehealth.com/",
+            "description":"Developed Predictive models in R and SAS to guide business decitions for Advocate operations and Supply Chain"
         },
         {
             "name": "Northwestern University",
             "city": "Evanston, IL, US",
             "position": "Procurement Administrator",
-            "years": 4,
-            "url": "http://www.northwestern.edu/"
+            "years": "2009-2013",
+            "url": "http://www.northwestern.edu/",
+            "description":"Develop simple adhoc reports and analytics, manage contracting process"
         }
     ]
 }
@@ -116,4 +119,13 @@ if (bio.skills.length > 0) {
   $("#skills").append(formattedSkill);
   var formattedSkill = HTMLskills.replace("%data%",bio.skills[2]);
   $("#skills").append(formattedSkill);
+}
+for (job in work.jobs){
+  $"#workExperience").append(HTMLworkStart);
+  
+  var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
+  var formattedEmployer = HTMLworkTitle.replace("%data%",work.jobs[job].position);
+  var formattedEmployerTitle = formattedEmployer + formattedTitle; $(".work-entry:last").append(formattedEmployerTitle);
+  
+  var formattedDescription= HTMLworkDescription.replace("%data%",work.jobs[job].description); $(".work-entry:last").append(formattedDescription);
 }
