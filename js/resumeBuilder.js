@@ -111,15 +111,15 @@ var projects = {
     ]
 }
 
-if (bio.skills.length > 0) {
-  $("#header").append(HTMLskillsStart);
-  var formattedSkill = HTMLskills.replace("%data%",bio.skills[0]);
-  $("#skills").append(formattedSkill);
-  var formattedSkill = HTMLskills.replace("%data%",bio.skills[1]);
-  $("#skills").append(formattedSkill);
-  var formattedSkill = HTMLskills.replace("%data%",bio.skills[2]);
-  $("#skills").append(formattedSkill);
-}
+//if (bio.skills.length > 0) {
+  //$("#header").append(HTMLskillsStart);
+  //var formattedSkill = HTMLskills.replace("%data%",bio.skills[0]);
+  //$("#skills").append(formattedSkill);
+  //var formattedSkill = HTMLskills.replace("%data%",bio.skills[1]);
+  //$("#skills").append(formattedSkill);
+  //var formattedSkill = HTMLskills.replace("%data%",bio.skills[2]);
+  //$("#skills").append(formattedSkill);
+//}
 
 for (job in work.jobs){
   $"#workExperience").append(HTMLworkStart);
