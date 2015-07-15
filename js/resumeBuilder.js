@@ -129,6 +129,6 @@ for (job in work.jobs){
   $(".work-entry:last").append(formattedEmployerTitle);
   var formattedDates = HTMLworkDates.replace("%data%",work.jobs[job].years); 
   $(".work-entry:last").append(formattedDates);
-  var formattedDescription= HTMLworkDescription.replace("%data%",work.jobs[job].description); 
+  var formattedDescription = HTMLworkDescription.replace("%data%",work.jobs[job].description); 
   $(".work-entry:last").append(formattedDescription);
 }
