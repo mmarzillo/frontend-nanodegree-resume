@@ -2,8 +2,8 @@ var name = "Matt Marzillo";
 var formattedName = HTMLheaderName.replace("%data%",name);
 var role = "Data Scientist";
 var formattedRole = HTMLheaderRole.replace("%data%",role);
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
+$("#header").append(formattedRole);
+$("#header").append(formattedName);
 var bio = {
   "name": "Matt Marzillo",
   "Role": "Advanced Analytics Consultant",
