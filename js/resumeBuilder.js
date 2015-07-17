@@ -158,7 +158,7 @@ projects.display = function() {
         $(".project-entry:last").append(formattedImage);
     }
   }
-}
+};
 
 projects.display();
 
