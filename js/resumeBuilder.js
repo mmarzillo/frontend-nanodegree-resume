@@ -154,7 +154,7 @@ projects.display = function() {
     
     if (projects.project[project].images.length > 0) {
       for (image in projects.project[project].images)
-        var formattedImage = HTMLprojectImage.replace("%data%",projects.project[project.images[image]]);
+        var formattedImage = HTMLprojectImage.replace("%data%",projects.project[project].images[image]);
         $(".project-entry:last").append(formattedImage);
     }
   }
