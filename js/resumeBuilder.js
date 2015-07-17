@@ -2,8 +2,8 @@ var name = "Matt Marzillo";
 var formattedName = HTMLheaderName.replace("%data%",name);
 var role = "Data Scientist";
 var formattedRole = HTMLheaderRole.replace("%data%",role);
-$("#header").append(formattedRole);
 $("#header").append(formattedName);
+$("#header").append(formattedRole);
 var bio = {
   "name": "Matt Marzillo",
   "Role": "Advanced Analytics Consultant",
@@ -134,4 +134,6 @@ function displaywork(){
   }
 }
 displaywork();
+$(document).click(function(loc){
+});
 
