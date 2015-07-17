@@ -160,6 +160,7 @@ projects.display = function() {
   }
 }
 
+projects.display();
 
 
 
