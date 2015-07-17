@@ -88,21 +88,21 @@ var work = {
 var projects = {
     "project": [
         {
-            "industry": "Healthcare - Pharmaceutical",
+            "year": "2015",
             "city": "Chicago,IL,US",
             "position": "Report Developer/Programmer",
             "shortdesc": "Microsoft report development",
             "longdesc": "Convert 100+ reports from IBM Cognos reporting system to Microsoft Reporting system. This required writing complex SQL queries and developing SSRS reports"
         },
         {
-            "industry": "Healthcare - Payor",
+            "year": "2015",
             "city": "Chicago,IL,US",
             "position": "BI Architect",
             "shortdesc": "BI assessment and architecture development",
             "longdesc": "Assess current data needs and sources, develop future state and path required to get meet the future needs of business"
         },
         {
-            "industry": "Healthcare - Provider",
+            "year": "2014",
             "city": "Chicago,IL,US",
             "position": "Advanced Analytics Consultant/Developer",
             "shortdesc": "Patient Classification Algorithm",
@@ -140,4 +140,41 @@ $(document).click(function(loc){
   
   logClicks(x,y);
 });
+
+projects.display = function() {
+  for (project in projects.project){
+    $("projects").append(HTMLprojectStart);
+    
+    var formattedTitle = HTMLprojectTitle.replace("%data%",projects.project[project].shortdesc);
+    $(".project-entry:last").append(formattedTitle);
+    var formattedDates = HTMLprojectDate.replace("%data%",projects.project[project].year);
+    $(".project-entry:last").append(formattedDates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%",projects.project[project].longdesc);
+    $(".project-entry:last").append(formattedDescription);
+    
+    if (projects.project[project].images.length > 0{
+      for (image in projects.project[project].images)
+        var formattedImage = HTMLprojectImage.replace("%data%",projects.project[project.images[image]]);
+        $(".project-entry:last").append(formattedImage);
+    })
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
