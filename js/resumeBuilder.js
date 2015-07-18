@@ -86,7 +86,7 @@ var work = {
     ]
 }
 var projects = {
-    "project": [
+    "projects": [
         {
             "year": "2015",
             "city": "Chicago,IL,US",
@@ -142,19 +142,19 @@ $(document).click(function(loc){
 });
 
 projects.display = function() {
-  for (project in projects.project){
+  for (project in projects.projects){
     $("projects").append(HTMLprojectStart);
     
-    var formattedTitle = HTMLprojectTitle.replace("%data%",projects.project[project].shortdesc);
+    var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].shortdesc);
     $(".project-entry:last").append(formattedTitle);
-    var formattedDates = HTMLprojectDate.replace("%data%",projects.project[project].year);
+    var formattedDates = HTMLprojectDate.replace("%data%",projects.projects[project].year);
     $(".project-entry:last").append(formattedDates);
-    var formattedDescription = HTMLprojectDescription.replace("%data%",projects.project[project].longdesc);
+    var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].longdesc);
     $(".project-entry:last").append(formattedDescription);
     
     if (projects.project[project].images.length > 0) {
-      for (image in projects.project[project].images)
-        var formattedImage = HTMLprojectImage.replace("%data%",projects.project[project].images[image]);
+      for (image in projects.projects[project].images)
+        var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].images[image]);
         $(".project-entry:last").append(formattedImage);
     }
   }
