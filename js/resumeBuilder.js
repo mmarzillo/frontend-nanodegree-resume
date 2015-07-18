@@ -144,7 +144,7 @@ $(document).click(function(loc){
 
 projects.display = function() {
   for (project in projects.projects){
-    $("projects").append(HTMLprojectStart);
+    $("#projects").append(HTMLprojectStart);
     var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].shortdesc);
     $(".project-entry:last").append(formattedTitle);
     var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].year);
