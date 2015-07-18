@@ -141,10 +141,9 @@ $(document).click(function(loc){
   logClicks(x,y);
 });
 
-projects.display = function() {
+function projects.display() {
   for (project in projects.projects){
     $("projects").append(HTMLprojectStart);
-    
     var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].shortdesc);
     $(".project-entry:last").append(formattedTitle);
     var formattedDates = HTMLprojectDate.replace("%data%",projects.projects[project].year);
@@ -158,7 +157,7 @@ projects.display = function() {
         //$(".project-entry:last").append(formattedImage);
     //}
   }
-};
+}
 
 projects.display();
 
