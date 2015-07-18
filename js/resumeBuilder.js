@@ -134,6 +134,7 @@ function displaywork(){
   }
 }
 displaywork();
+
 $(document).click(function(loc){
   var x = loc.pageX;
   var y = loc.pageY;
@@ -157,7 +158,7 @@ function projects.display() {
         //$(".project-entry:last").append(formattedImage);
     //}
   }
-}
+};
 
 projects.display();
 
