@@ -142,12 +142,12 @@ $(document).click(function(loc){
   logClicks(x,y);
 });
 
-function projects.display() {
+projects.display = function() {
   for (project in projects.projects){
     $("projects").append(HTMLprojectStart);
     var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].shortdesc);
     $(".project-entry:last").append(formattedTitle);
-    var formattedDates = HTMLprojectDate.replace("%data%",projects.projects[project].year);
+    var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].year);
     $(".project-entry:last").append(formattedDates);
     var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].longdesc);
     $(".project-entry:last").append(formattedDescription);
