@@ -152,11 +152,11 @@ projects.display = function() {
     var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].longdesc);
     $(".project-entry:last").append(formattedDescription);
     
-    if (projects.projects[project].images.length > 0) {
-      for (image in projects.projects[project].images)
-        var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].images[image]);
-        $(".project-entry:last").append(formattedImage);
-    }
+   // if (projects.projects[project].images.length > 0) {
+    //  for (image in projects.projects[project].images)
+      //  var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].images[image]);
+        //$(".project-entry:last").append(formattedImage);
+    //}
   }
 };
 
